@@ -5,11 +5,25 @@ body {
     overflow: hidden;
 }
 
+@media (max-width: 500px) { /* 500PX */
+    body {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+@media (max-width: 500px) { /* 500PX */
+    main {
+        flex-direction: column;
+        height: auto;
+    }
 }
 
         /* RESULT */
@@ -47,7 +61,7 @@ main {
 }
 
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px) { /* 1920PX */
     .result-div {
         height: 550px;
         width: 375px;
@@ -67,13 +81,37 @@ main {
     }
 }
 
+@media (max-width: 500px) { /* 500PX */
+    .result-div {
+        height: 360px;
+        width: 500px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+
+    .result-div h1 {
+        font-size: 30px;
+    }
+
+    .result-div h2 {
+        font-size: 18px;
+    }
+
+    .result-div p {
+        font-size: 16px;
+        width: 55%;
+    }
+}
+
 .circle-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 35px 50px;
-    border-radius: 100px;
+    border-radius: 1000px;
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
 
@@ -91,10 +129,9 @@ main {
     font-size: 14px;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px) { /* 1920PX */
     .circle-div {
         padding: 50px 65px;
-        border-radius: 1000px;
     }
     
     .circle-div h1 {
@@ -103,6 +140,23 @@ main {
     
     .circle-div p {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) { /* 500PX */
+    .circle-div {
+        margin-top: -10px;
+        margin-bottom: -10px;
+        padding: 30px 45px;
+    }
+    
+    .circle-div h1 {
+        font-size: 60px;
+    }
+    
+    .circle-div p {
+        font-size: 14px;
+        white-space: nowrap;
     }
 }
 
@@ -124,7 +178,7 @@ main {
     margin-top: 30px;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px) { /* 1920PX */
     .summary-div {
         height: 550px;
         width: 375px;
@@ -134,6 +188,19 @@ main {
         margin-left: 45px;
         font-size: 24px;
     }
+}
+
+@media (max-width: 500px) { /* 500PX */
+    .summary-div {
+        height: 420px;
+        width: 500px;
+    }
+    
+    .summary-div h3 {
+        margin-top: 20px;
+        margin-left: 45px;
+        font-size: 20px;
+    }  
 }
 
 .stats-div {
@@ -154,7 +221,7 @@ main {
     color:gray;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px) { /* 1920PX */
     .stats-div {
         margin-top: -10px;
         margin-left: 45px;
@@ -164,6 +231,14 @@ main {
     .stats-div p {
         margin-left: 50px;
         margin-right: 15px;
+    }
+}
+
+@media (max-width: 500px) { /* 500PX */
+    .stats-div {
+        margin-top: -10px;
+        margin-left: 45px;
+        height: 250px;
     }
 }
 
@@ -180,7 +255,7 @@ main {
     font-weight: 500;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px) { /* 1920PX */
     .reaction-stat,
     .memory-stat,
     .verbal-stat,
@@ -188,6 +263,18 @@ main {
         height: 60px;
         width: 290px;
         font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) { /* 500PX */
+    .reaction-stat,
+    .memory-stat,
+    .verbal-stat,
+    .visual-stat {
+        margin-bottom: 15px;
+        height: 50px;
+        width: 400px;
+        font-size: 16px;
     }
 }
 
@@ -234,9 +321,16 @@ button {
     font-weight: 700;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px) { /* 1920PX */
     button {
         width: 290px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) { /* 500PX */
+    button {
+        width: 400px;
         font-size: 20px;
     }
 }
@@ -248,4 +342,3 @@ button:hover {
 button:active {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
-
