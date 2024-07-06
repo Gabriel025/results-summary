@@ -18,18 +18,16 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     height: 450px;
     width: 325px;
     border-radius: 20px;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-.result-div p {
-    margin-top: 0;
-    font-size: 18px;
-    color: hsl(241, 100%, 89%);
-    width: 80%;
-    text-align: center;
+.result-div h1 {
+    margin-bottom: 10px;
+    color: white;
 }
 
 .result-div h2 {
@@ -39,9 +37,34 @@ main {
     color: hsl(241, 100%, 89%);
 }
 
-.result-div h1 {
-    margin-bottom: 15px;
-    color: white;
+.result-div p {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: hsl(241, 100%, 89%);
+    width: 80%;
+    text-align: center;
+}
+
+
+@media (min-width: 1920px) {
+    .result-div {
+        height: 550px;
+        width: 375px;
+    }
+
+    .result-div h1 {
+        font-size: 40px;
+    }
+
+    .result-div h2 {
+        font-size: 24px;
+    }
+
+    .result-div p {
+        font-size: 20px;
+        width: 75%;
+    }
 }
 
 .circle-div {
@@ -68,6 +91,20 @@ main {
     font-size: 14px;
 }
 
+@media (min-width: 1920px) {
+    .circle-div {
+        padding: 50px 65px;
+        border-radius: 1000px;
+    }
+    
+    .circle-div h1 {
+        font-size: 70px;
+    }
+    
+    .circle-div p {
+        font-size: 18px;
+    }
+}
 
 
         /* SUMMARY */
@@ -87,10 +124,23 @@ main {
     margin-top: 30px;
 }
 
+@media (min-width: 1920px) {
+    .summary-div {
+        height: 550px;
+        width: 375px;
+    }
+    
+    .summary-div h3 {
+        margin-left: 45px;
+        font-size: 24px;
+    }
+}
+
 .stats-div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    row-gap: 0;
     margin-left: 35px;
     height: 250px;
 }
@@ -104,16 +154,41 @@ main {
     color:gray;
 }
 
+@media (min-width: 1920px) {
+    .stats-div {
+        margin-top: -10px;
+        margin-left: 45px;
+        height: 325px;
+    }
+    
+    .stats-div p {
+        margin-left: 50px;
+        margin-right: 15px;
+    }
+}
+
 .reaction-stat,
 .memory-stat,
 .verbal-stat,
 .visual-stat {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 50px;
     width: 250px;
     border-radius: 10px;
     font-weight: 500;
+}
+
+@media (min-width: 1920px) {
+    .reaction-stat,
+    .memory-stat,
+    .verbal-stat,
+    .visual-stat {
+        height: 60px;
+        width: 290px;
+        font-size: 18px;
+    }
 }
 
 .reaction-stat {
@@ -142,9 +217,13 @@ main {
     margin-left: 10px;
 }
 
+.button-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
 button {
-    margin-top: 40px;
-    margin-left: 35px;
     width: 250px;
     padding: 15px 0;
     border: none;
@@ -155,6 +234,13 @@ button {
     font-weight: 700;
 }
 
+@media (min-width: 1920px) {
+    button {
+        width: 290px;
+        font-size: 20px;
+    }
+}
+
 button:hover {
     cursor: pointer;
 }
@@ -163,15 +249,3 @@ button:active {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-
-
-
-        /* FOOTER */
-
-.attribution {
-    font-size: 11px; text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%); 
-}
