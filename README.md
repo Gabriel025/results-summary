@@ -62,7 +62,6 @@ I think the main thing i need to improve is making the design more responsive to
 
 - [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient) - This helped me with the gradients used on the left side
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
