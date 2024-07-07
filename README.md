@@ -29,7 +29,6 @@ Users should be able to:
 
 ![](./screenshots/1440-Desktop.jpg)
 ![](./screenshots/Desktop-Active.jpg)
-![](./screenshots/1920-Desktop.jpg)
 ![](./screenshots/500-Mobile.jpg)
 
 ### Links
